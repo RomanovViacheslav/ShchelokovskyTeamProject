@@ -1,0 +1,37 @@
+/* var */
+:root {
+  --txt-main: #1c1c1c;
+  --txt-main-light: #3c3c3c;
+  --text-link: #62705c;
+  --text-header-title: #f5f0ed;
+  --color-main: #ffffff;
+  --color-block: #f5f4ee;
+  --links_default_page: #62705c;
+  --links_disable: #ee313c;
+  --links_hover: #3e2b74;
+  --links_default_header: #000000;
+}
+
+/* general*/
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* layout */
+.container {
+  max-width: 1096px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
