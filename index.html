@@ -1,50 +1,189 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Архитектурно-этнографический музей-заповедник "ЩЕЛОКОВСКИЙ ХУТОР"</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Архитектурно-этнографический музей-заповедник "ЩЕЛОКОВСКИЙ ХУТОР"
+    </title>
     <!-- шрифты -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- стили -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body class="page">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="page">
     <!-- шапка -->
     <header class="page-header">
-        <div class="page-header_row"></div>
-        <div class="page-header_banner"></div>
+      <div class="page-header_row"></div>
+      <div class="page-header_banner"></div>
     </header>
     <!-- контент -->
     <main>
-        <!-- Объявление -->
-        <section class="section-adt"></section>
+      <!-- Объявление -->
+      <section class="section-adt"></section>
 
-        <!-- события -->
-        <section class="section-event"></section>
+      <!-- события -->
+      <section class="page-section section-event">
+        <div class="container">
+          <h2 class="page-section__title">АФИША СОБЫТИЙ</h2>
+          <div class="section-event__list">
+            <div class="section-event__foto">
+              <img
+                class="foto-zuhardol"
+                src="images/foto-zuhardol.jpg"
+                alt=""
+              />
+            </div>
+            <div class="section__datetimeage">
+              <p class="section__datetimeage date">
+                СРЕДА<br />04.12.2021
+              </p>
+              <p class="section__datetimeage time">
+                Время<br />10.00<br />14.00
+              </p>
+              <p class="section__datetimeage age">6+</p>
+            </div>
+            <div class="section-event__text">
+              <h3 class="section-event__title">
+                Выставка "Сахарный дол:<br />мгновения и очевидцы"
+              </h3>
+              <p class="section-event__text text">
+                В основу выставки «Сахарный Дол: мгновения и <br />очевидцы»
+                легли фотографии из домашних<br />
+                архивов, предоставленные старожилами поселка.
+              </p>
+              <a href="#!" class="button button--primary">Подробнее</a>
+            </div>
+          </div>
+          <div class="section-event__list">
+            <div class="section-event__foto">
+              <img class="foto-seminar" src="images/foto-seminar1.png" alt="" />
+            </div>
+            <div class="section__datetimeage">
+              <p class="section__datetimeage date">
+                ПЯТНИЦА<br />14.12.2021
+              </p>
+              <p class="section__datetimeage time">
+                Время<br />10.00<br />14.00
+              </p>
+              <p class="section__datetimeage age">6+</p>
+            </div>
+            <div class="section-event__text">
+              <h3 class="section-event__title">
+                III научно-практический<br />семинар "Нижегородский<br />традиционный
+                костюм"
+              </h3>
+              <p class="section-event__text text">
+                III научно-практический семинар "Нижегородский<br />традиционный
+                костюм – опыт изучения и <br />
+                реконструкции»
+              </p>
+              <a href="#!" class="button button--primary">Подробнее</a>
+            </div>
+          </div>
+          <div class="page-section__linkpage">
+            <a class="page-section__linktext" href="">Смотреть все события</a>
+          </div>
+        </div>
+        </div>
+      </section>
 
-        <!-- Экскурсии -->
-        <section class="section-excursion"></section>
+      <!-- Экскурсии -->
+      <section class="page-section section-excursion">
+        <div class="container">
+          <h2 class="page-section__title">ЭКСКУРСИИ</h2>
+          <div class="section-excursion__list">
+            <div class="section-excursion__item">
+              <div class="section__datetimeage">
+                БЛИЖАЙШАЯ ДАТА<br />22.12.2021 10:00, 12:00, 14:00
+              </div>
+              <h3 class="section-excursion__item title">
+                ДЕТСКАЯ СВЯТОЧНАЯ<br />ТЕМАТИЧЕСКАЯ ЭКСКУРСИЯ<br />"КАРАКУЛЬКА"
+              </h3>
+              <img
+                class="section-excursion__item foto"
+                src="images/karakulka.png"
+                alt=""
+              />
+            </div>
+            <div class="section-excursion__item">
+              <div class="section__datetimeage">
+                БЛИЖАЙШАЯ ДАТА<br />18.12.2021 11:00, 13:00
+              </div>
+              <h3 class="section-excursion__item title">
+                ТЕМАТИЧЕСКАЯ<br />ЭКСКУРСИЯ "В ГОСТЯХ<br />У ДЕДА МОРОЗА"
+              </h3>
+              <img
+                class="section-excursion__item foto"
+                src="images/moroz.png"
+                alt=""
+              />
+            </div>
+            <div class="section-excursion__item">
+              <div class="section__datetimeage">
+                БЛИЖАЙШАЯ ДАТА<br />02.12.2021 10:30
+              </div>
+              <h3 class="section-excursion__item title">
+                ТРАДИЦИОННАЯ<br />НИЖЕГОРОДСКАЯ<br />КУХНЯ
+              </h3>
+              <img
+                class="section-excursion__item foto"
+                src="images/kuhny.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="page-section__linkpage">
+            <a class="page-section__linktext" href="">Смотреть все события</a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Эко-тропа -->
-        <section class="section-tour"></section>
+      <!-- Эко-тропа -->
+      <section class="section-tour"></section>
 
-        <!-- Проекты -->
-        <section class="section-projects"></section>
+      <!-- Проекты -->
+      <section class="section-projects">
+          <div class="container">
+            <h2 class="page-section__title">ПРОЕКТЫ</h2>
+            <div class="section-projects__list">
+                <img class="section-projects__foto" src="images/lekarstvo.png" alt="">
+                <div class="section-projects__text">
+                    <h4 class="section-projects_title">"ЛЕКАРСТВО ОТ ЗАДУМЧИВОСТИ"</h4>
+                    <p class="section-projects__text text">Дорогие друзья!<br/>Так назывался один из первых сборников<br/>сказок, изданных в России в восемнадцатом<br/>веке. Мы хотим напомнить детям и взрослым<br/>о чудесном, фантастическом мире русских<br/>сказок.
+                    </p>
+                    <a href="#!" class="section-projects-btn button button--secondary">Перейти на страницу проекта</a>
+                </div>
+               
+               <button class="section-projects__arrow--right" type="button">
+                <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <path d="M218.82812,130.82812l-72,72a3.99957,3.99957,0,0,1-5.65625-5.65625L206.34326,132H40a4,4,0,0,1,0-8H206.34326L141.17187,58.82812a3.99957,3.99957,0,0,1,5.65625-5.65625l72,72A3.99854,3.99854,0,0,1,218.82812,130.82812Z" stroke="#6B6B6B" stroke-width="3"/>
+                </svg>
+               </button>
+                
+                               
+                
+            </div>
+            <div class="page-section__linkpage">
+                <a class="page-section__linktext" href="">Смотреть все события</a>
+            </div>
+          </div>
+      </section>
 
-        <!-- Новости -->
-        <section class="section-news"></section>
+      <!-- Новости -->
+      <section class="section-news"></section>
 
-        <!--Рекламные баннеры-->
-        <section class="section-banners"></section>
-
+      <!--Рекламные баннеры-->
+      <section class="section-banners"></section>
     </main>
-
 
     <!-- подвал -->
     <footer class="page-footer"></footer>
-</body>
+  </body>
 </html>
