@@ -38,16 +38,11 @@ body {
   width: 126px;
   height: 40px;
   text-decoration: none;
-  /*padding: 0 40px;*/
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.25s ease;
   margin-bottom: 0px;
-
-  /*padding: 8px 37px;*/
-
-  /* position: absolute;*/
 }
 
 .button:focus {
@@ -85,7 +80,7 @@ body {
   padding-right: 20px;
   margin: 0 auto;
 }
-
+/*title*/
 .page-section__title {
   color: var(--txt-main);
   font-family: Roboto;
@@ -153,18 +148,21 @@ a {
   height: 247px;
   margin-top: 57px;
 }
-
+/* section-event foto*/
 .section-event__foto {
   width: 38%;
   overflow: hidden;
 }
+/*фото сахарный дол*/
 .foto-zuhardol {
   margin-top: -15px;
   margin-left: -195px;
 }
+/*фото семинар*/
 .foto-seminar {
   margin-top: -75px;
 }
+/* секция дата время возраст*/
 .section__datetimeage {
   margin-top: 0px;
   font-family: Roboto;
@@ -175,21 +173,23 @@ a {
   text-transform: uppercase;
   color: var(--txt-main-light);
 }
-
+/*возраст*/
 .age {
   font-size: 18px;
   text-transform: uppercase;
   line-height: 131%;
 }
+/*время*/
 .time {
   line-height: 136%;
 }
-
+/*События текст*/
 .section-event__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+/*События заголовок*/
 .section-event__title {
   margin: 0px;
   font-family: Roboto;
@@ -203,12 +203,13 @@ a {
 .section-excursion {
   margin-top: 95px;
 }
+/*блок экскурсии*/
 .section-excursion__list {
   display: flex;
   justify-content: space-between;
   margin-top: 57px;
 }
-
+/*заголовок экскурсии*/
 .section-excursion__item .title {
   font-family: Roboto;
   font-style: normal;
@@ -223,11 +224,13 @@ a {
 .section-projects {
   margin-top: 120px;
 }
+/*блок проекты*/
 .section-projects__list {
   margin-top: 34px;
   display: flex;
   justify-content: space-between;
 }
+/*заголовок проекта*/
 .section-projects_title {
   font-family: Roboto;
   font-style: normal;
@@ -238,16 +241,18 @@ a {
   text-transform: uppercase;
   color: var(--links_default_header);
 }
+/*текст проекта*/
 .section-projects__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+/*кнопка проекта*/
 .section-projects-btn {
   width: 262px;
   height: 40px;
 }
-
+/*стрелка вправо*/
 .section-projects__arrow--right {
   width: 38px;
   height: 38px;
@@ -265,6 +270,6 @@ a {
 .section-projects__arrow--right:hover {
   border: 3px solid var(--links_hover);
 }
-.section-projects__arrow--right path:hover {
+.section-projects__arrow--right .Flat path:hover {
   stroke: var(--links_hover);
 }
