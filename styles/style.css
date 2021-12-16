@@ -560,114 +560,6 @@ a {
 
 /*---------------------------------------------------------------------*/
 /* новости */
-
-.section-news {
-  margin-top: 74px;
-}
-
-.section-news_content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-/* левый блок с картинков в разделе новости */
-
-.section-news_content-left {
-  margin: 0 auto;
-  padding-top: 26px;
-  padding-left: 5px;
-  width: 45%;
-}
-/* правый блок в разделе новости */
-
-.section-news_content-right {
-  width: 55%;
-}
-/* отдельная новость в разделе новости */
-
-.section-news_items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  border-bottom: 1px solid #bfbfbf;
-  height: 60px;
-  padding-right: 10px;
-}
-/* дата в отдельной новости в разделе новости */
-
-.section-news_date {
-  /* padding-top: 12px; */
-  width: 63px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: var(--txt-main-light);
-}
-/* текст в отдельной новости в разделе новости */
-
-.section-news_text {
-  width: 401px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.03em;
-  color: var(--txt-main);
-}
-/* стрелка в отдельной новости в разделе новости */
-
-.section-news__arrow--right {
-  width: 24px;
-  height: 24px;
-  border: none;
-  background: none;
-  appearance: none;
-  padding-top: 30px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-news__arrow--right:hover {
-  border: 3px solid var(--links_hover);
-}
-
-.section-news__arrow--right .Flat path:hover {
-  stroke: var(--links_hover);
-}
-/* Рекламные баннеры */
-
-.section-banners {
-  margin-top: 103px;
-  margin-bottom: 19px;
-}
-
-.section-banners_content {
-  position: relative;
-  display: flex;
-  justify-content: right;
-}
-/*блок с баннерами Рекламные баннеры */
-
-.section-banners_block {
-  width: 593px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.section-banners_banner-aids {
-  width: 297px;
-  height: 107px;
-}
-
-/* новости */
-
 .section-news {
   margin-top: 74px;
 }
@@ -728,7 +620,6 @@ a {
   border: none;
   background: none;
   appearance: none;
-  margin-top: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
