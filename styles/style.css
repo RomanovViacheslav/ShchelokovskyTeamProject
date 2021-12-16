@@ -585,6 +585,7 @@ a {
   border-bottom: 1px solid #bfbfbf;
   height: 60px;
   padding-right: 10px;
+  align-items: center;
 }
 
 /* дата в отдельной новости в разделе новости */
