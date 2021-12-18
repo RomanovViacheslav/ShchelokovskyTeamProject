@@ -582,6 +582,10 @@ a {
   letter-spacing: 0.03em;
   color: var(--txt-main);
 }
+.section-news-top_text a {
+  text-decoration: none;
+  color: var(--txt-main);
+}
 
 /* стрелка в отдельной новости в разделе новости */
 
@@ -784,7 +788,10 @@ a {
   letter-spacing: 0.03em;
   color: var(--txt-main);
 }
-
+.section-news_text a {
+  text-decoration: none;
+  color: var(--txt-main);
+}
 /* картинка новости - отличается позиционирование от главной страницы*/
 .section-news_images img {
   visibility: hidden;
