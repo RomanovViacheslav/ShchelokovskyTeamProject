@@ -29,17 +29,6 @@ body {
   font-weight: 400;
 }
 /* layout */
-.container {
-  position: absolute;
-  right: 0px;
-  max-width: 1096px;
-  margin: 0 auto;
-  /* padding-left: 20px;
-  padding-right: 20px; */
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .container-top {
   position: relative;
   max-width: 1248px;
