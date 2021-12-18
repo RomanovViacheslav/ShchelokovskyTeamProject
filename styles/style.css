@@ -28,7 +28,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
+/* layout */
 .container {
   position: absolute;
   right: 0px;
@@ -36,6 +36,8 @@ body {
   margin: 0 auto;
   /* padding-left: 20px;
   padding-right: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container-top {
@@ -72,23 +74,33 @@ body {
 .social-list--dark path {
   fill: var(--links_default_header);
 }
+
+/*шапка и меню*/
 /* header */
 .page-header_row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
   height: 183px;
+  justify-items: center;
+  align-items: center;
 }
+
 .page-header_menu-left {
-  display: flex;
-  justify-content: space-between;
-  width: 245px;
+  grid-column: span 2;
+  columns: 2;
+}
+
+.page-header_logo {
+  grid-column: span 4;
 }
 
 .page-header_menu-right {
+  grid-column: span 2;
   display: flex;
-  justify-content: space-between;
-  width: 260px;
+  columns: 2;
+  align-items: center;
 }
 
 .page-header_icon {
@@ -112,6 +124,9 @@ body {
 
 .mainmenu_list-item {
   padding-bottom: 15px;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
 }
 
 .mainmenu_list-item a {
@@ -122,17 +137,20 @@ body {
   transition: all 0.25s ease;
 }
 
-.mainmenu_list-item a:hover,
-.mainmenu_list-item a:focus {
+.mainmenu_list-item a:hover {
   color: var(--links_hover);
-  font-weight: 700;
-  /* font-size: 18px; */
 }
 
 .mainmenu_list-item a:active {
+  font-weight: 700;
+  color: var(--links_disable);
+  font-size: 15px;
+}
+.mainmenu_list-item a:focus {
   color: var(--links_disable);
 }
 
+/*баннер*/
 /* intro */
 
 .section-intro {
@@ -163,6 +181,7 @@ body {
   margin-top: 240px;
 }
 
+/*Объявление*/
 /* section-adt */
 
 .section-adt_text {
@@ -183,7 +202,7 @@ body {
   color: var(--txt-main);
 }
 
-/*----------------------*/
+/*кнопки*/
 
 /* button */
 .button {
@@ -223,6 +242,9 @@ body {
   border: 1px solid var(--links_disable);
   background-color: transparent;
   color: var(--txt-main);
+  font-size: 14px;
+  min-width: 208px;
+  max-width: 262px;
 }
 
 .button--secondary:hover {
@@ -230,13 +252,7 @@ body {
   color: var(--color-main);
 }
 
-/* layout */
-.container {
-  max-width: 1096px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
+/*заголовки*/
 /*title*/
 .page-section__title {
   color: var(--txt-main);
@@ -255,7 +271,7 @@ body {
 a {
   transition: all 0.25s ease;
 }
-
+/*ссылки*/
 /*linktext*/
 .page-section__linkpage {
   margin-top: 38px;
@@ -302,6 +318,8 @@ a {
   color: var(--txt-main-light);
 }
 
+/*---------------------------------------------------------------------*/
+/* События */
 /* section-event*/
 .section-event {
   margin-top: 38px;
@@ -363,6 +381,10 @@ a {
   line-height: 98%;
   color: var(--links_default_header);
 }
+
+/*---------------------------------------------------------------------*/
+/* Экскурсии */
+
 /*section-excursion*/
 .section-excursion {
   margin-top: 95px;
@@ -388,7 +410,7 @@ a {
   text-transform: uppercase;
   color: var(--links_default_header);
 }
-
+/*---------------------------------------------------------------------*/
 /* Эко-тропа */
 
 .section-tour {
@@ -400,18 +422,19 @@ a {
 /* картинка в блоке Эко-тропа */
 
 .section-tour_image {
-  width: 441px;
+  max-width: 441px;
   height: 515px;
 }
 
 .section-tour_content-right {
   margin: 0 auto;
   padding-top: 57px;
+  padding-left: 5px;
 }
 /* заголовок в блоке Эко-тропа */
 
 .section-tour_title {
-  width: 412px;
+  max-width: 412px;
   height: 87px;
   font-weight: 500;
   font-size: 24px;
@@ -423,7 +446,7 @@ a {
 /* текст в блоке Эко-тропа */
 
 .section-tour_text {
-  width: 412px;
+  max-width: 412px;
   font-size: 14px;
   line-height: 130%;
   letter-spacing: 0.03em;
@@ -434,15 +457,22 @@ a {
 .section-tour_button {
   margin-top: 34px;
   display: flex;
-  width: 352px;
+  max-width: 352px;
   justify-content: space-between;
 }
+.section-tour_button--secondary {
+  min-width: 150px;
+  margin-top: 0px;
+}
+
 /* изменяю размеры по фигме в блоке Эко-тропа */
 
 .section-tour_btn {
-  width: 150px;
+  max-width: 150px;
   height: 40px;
 }
+/*---------------------------------------------------------------------*/
+/* ПРОЕКТЫ*/
 /*section-projects*/
 .section-projects {
   margin-top: 120px;
@@ -466,7 +496,7 @@ a {
   color: var(--links_default_header);
 }
 /*текст проекта*/
-.section-projects__text {
+.section-projects__bloktext {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -475,16 +505,12 @@ a {
 .section-projects__foto {
   max-width: 440px;
 }
-/*кнопка проекта*/
-.section-projects-btn {
-  width: 262px;
-  height: 40px;
-}
+
 /*стрелка вправо*/
 .section-projects__arrow--right {
   width: 38px;
   height: 38px;
-  margin-top: 140px;
+  margin-top: 142px;
   border: none;
   background: none;
   appearance: none;
@@ -498,51 +524,45 @@ a {
 .section-projects__arrow--right:hover {
   border: 3px solid var(--links_hover);
 }
-.section-projects__arrow--right .Flat path:hover {
-  stroke: var(--links_hover);
+.section-projects__arrow--right svg:hover {
+  fill: var(--links_hover);
 }
 /*---------------------------------------------------------------------*/
-/* новости */
+/* НОВОСТИ */
 
 .section-news {
   margin-top: 74px;
 }
 
 .section-news_content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: 0px;
 }
-/* левый блок с картинков в разделе новости */
 
-.section-news_content-left {
-  margin: 0 auto;
-  padding-top: 26px;
-  padding-left: 5px;
-  width: 45%;
-}
-/* правый блок в разделе новости */
-
-.section-news_content-right {
-  width: 55%;
-}
 /* отдельная новость в разделе новости */
-
-.section-news_items {
+.section-news_content {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.section-news_items {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   flex-direction: row;
   border-bottom: 1px solid #bfbfbf;
-  height: 60px;
+  /* height: 60px; */
   padding-right: 10px;
+  align-items: center;
 }
+
 /* дата в отдельной новости в разделе новости */
 
 .section-news_date {
   /* padding-top: 12px; */
-  width: 63px;
+  max-width: 63px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -550,9 +570,10 @@ a {
   text-transform: uppercase;
   color: var(--txt-main-light);
 }
+
 /* текст в отдельной новости в разделе новости */
 
-.section-news_text {
+.section-news-top_text {
   width: 401px;
   font-style: normal;
   font-weight: normal;
@@ -561,15 +582,16 @@ a {
   letter-spacing: 0.03em;
   color: var(--txt-main);
 }
+
 /* стрелка в отдельной новости в разделе новости */
 
-.section-news__arrow--right {
-  width: 24px;
-  height: 24px;
+.section-news__arrow {
+  width: 26px;
+  height: 26px;
+  margin-top: 0;
   border: none;
   background: none;
   appearance: none;
-  padding-top: 30px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -583,6 +605,22 @@ a {
 .section-news__arrow--right .Flat path:hover {
   stroke: var(--links_hover);
 }
+
+/* появляющаяся картинка при наведении курсора на описание новости */
+.section-news-top_images span {
+  visibility: hidden;
+  position: absolute;
+  left: 175px;
+  top: 85px;
+}
+
+.section-news-top_images:hover span {
+  visibility: visible;
+}
+.section-news-top_images:hover img {
+  transition: all 4s ease;
+}
+/*---------------------------------------------------------------------*/
 /* Рекламные баннеры */
 
 .section-banners {
@@ -591,21 +629,15 @@ a {
 }
 
 .section-banners_content {
-  position: relative;
-  display: flex;
-  justify-content: right;
-}
-/*блок с баннерами Рекламные баннеры */
-
-.section-banners_block {
-  width: 593px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 0px;
+  max-width: 55%;
 }
 
 .section-banners_banner-aids {
-  width: 297px;
+  max-width: 100%;
   height: 107px;
 }
 /*---------------------------------------------------------------------*/
@@ -658,21 +690,114 @@ a {
 
 /*================================================================================================================================*/
 /* СТРАНИЦА КОНТАКТЫ*/
+
+/* красный шрифт*/
+.fontred {
+  color: var(--links_disable);
+}
+/* хлеьные крошки*/
+.breadcrumbs {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+  letter-spacing: 0.03em;
+  /* links_default_header */
+  color: var(--links_default_header);
+}
+/* ссылка эл.почты*/
+.page-section__linktext--contact {
+  color: var(--links_default_page);
+}
+/* иконки*/
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.social-list {
+  margin-left: 17px;
+}
+.social-icon {
+  margin-bottom: -15px;
+}
+/* текстовый блок*/
 .section-contact__text {
   margin-top: 69px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
-.section-contact__text--item {
-  margin-right: 147px;
+/* текстовый блок - выравнивание правого блока*/
+.section-contact__text--right {
+  margin-left: 147px;
 }
+/* жирный текст*/
+.fontbold {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  letter-spacing: 0.03em;
+  color: var(--txt-main);
+}
+/* шрифт тектового блока*/
+.section-contact__text--left p .section-contact__text--right p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 145%;
+  /* or 23px */
+  letter-spacing: 0.03em;
+  color: #6a6a6a;
+}
+/* блок с картой*/
 .section-contact__map {
   max-width: 1056px;
   margin-top: 22px;
-  margin-bottom: 151px;
+  margin-bottom: 140px;
 }
+/* карта*/
 .section-map {
   width: 100%;
   height: 421px;
+}
+
+/*================================================================================================================================*/
+/* СТРАНИЦА НОВОСТИ*/
+.section-news-page {
+  margin-top: 22px;
+}
+/* текст новости*/
+.section-news_text {
+  position: relative;
+  max-width: 401px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: var(--txt-main);
+}
+
+/* картинка новости - отличается позиционирование от главной страницы*/
+.section-news_images img {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -137%;
+  max-width: 399px;
+}
+.section-news_images:hover img {
+  visibility: visible;
+  transition: all 0.25s ease;
+}
+
+/* ссылка новости*/
+.page-section-news__linkpage {
+  margin-bottom: 191px;
 }
