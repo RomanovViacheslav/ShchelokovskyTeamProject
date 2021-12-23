@@ -68,6 +68,7 @@
                     </a>                    
                 </div>                                      
             </div>
+            
         </div>                  
       </div>
     </header>
@@ -77,7 +78,7 @@
         <section class="section-intro">
             <div class="container-top">
                 <!-- Заголовок -->
-                <h1 class="section-intro_title">"ЩЕЛОКОВСКИЙ <br>ХУТОР"</h1>
+                <h1 class="section-intro_title">ЩЕЛОКОВСКИЙ <br>ХУТОР</h1>
                 <span class="section-intro_subtitle">Архитектурно-этнографический <br>музей-заповедник</span>
                 <!-- иконки соцсетей -->
                 <div class="section-intro_icon">
@@ -122,7 +123,7 @@
         <div class="container-top">
           <div class="page-section-right">
               <!--заголовок раздела События-->
-            <h2 class="page-section__title">АФИША СОБЫТИЙ</h2>
+            <h2 class="section-event__title-main page-section__title">АФИША СОБЫТИЙ</h2>
             <!--Событие 1-->
             <div class="section-event__list">
               <!--Событие 1: фото-->
@@ -193,9 +194,11 @@
               <a class="page-section__linktext" href="">Смотреть все события</a>
             </div>
             <!-- Кнопка "АФИША" для мобильной версии -->
-            <a href="#!" class="section-event__button button button--primary">
-              АФИША СОБЫТИЙ
-            </a>
+            <div class="section-event__wrap-button">
+              <a href="#!" class="section-event__button button button--primary">
+                АФИША СОБЫТИЙ
+              </a>
+            </div>  
           </div> 
         </div>        
       </section>
@@ -207,59 +210,50 @@
             <!--Заголовок раздела Экскурсии-->
             <h2 class="page-section__title">ЭКСКУРСИИ</h2>
             <div class="section-excursion__list">
-              <!--Экскурсия 1-->
-              <div class="section-excursion__item">
+
+		<!--Экскурсия 1-->
+              <div class="section-excursion__item section-excursion__item--ferst">
                 <!--Экскурсия 1: дата время-->
-                <div class="section__datetimeage">
-                  БЛИЖАЙШАЯ ДАТА<br />22.12.2021 10:00, 12:00, 14:00
+                <div class="section__datetimeage">БЛИЖАЙШАЯ ДАТА<br />22.12.2021<span class="section__time">, 12:00, 14:00</span>
                 </div>
                 <!--Экскурсия 1: заголовок экскурсии 1-->
-                <h3 class="section-excursion__item title">
-                  ДЕТСКАЯ СВЯТОЧНАЯ<br />ТЕМАТИЧЕСКАЯ ЭКСКУРСИЯ<br />"КАРАКУЛЬКА"
-                </h3>
+                <h3 class="section-excursion__item title">ДЕТСКАЯ СВЯТОЧНАЯ<br />ТЕМАТИЧЕСКАЯ ЭКСКУРСИЯ<br />"КАРАКУЛЬКА"</h3>
                 <!--Экскурсия 1: фото-->
-                <img
-                  class="section-excursion__item foto"
-                  src="images/karakulka.png">
+                <img class="section-excursion__item foto" src="images/karakulka.png" alt=""/>
               </div>
-              <!--Экскурсия 2-->
-              <div class="section-excursion__item">
+		<!--Экскурсия 2-->
+              <div class="section-excursion__item section-excursion__item--second">
                 <!--Экскурсия 2: дата время-->
-                <div class="section__datetimeage">
-                  БЛИЖАЙШАЯ ДАТА<br />18.12.2021 11:00, 13:00
+                <div class="section__datetimeage">БЛИЖАЙШАЯ ДАТА<br />18.12.2021<span class="section__time">, 13:00</span>
                 </div>
                 <!--Экскурсия 2: заголовок экскурсии 2-->
-                <h3 class="section-excursion__item title">
-                  ТЕМАТИЧЕСКАЯ<br />ЭКСКУРСИЯ "В ГОСТЯХ<br />У ДЕДА МОРОЗА"
-                </h3>
+                <h3 class="section-excursion__item title">ТЕМАТИЧЕСКАЯ<br />ЭКСКУРСИЯ "В ГОСТЯХ<br />У ДЕДА МОРОЗА"</h3>
                 <!--Экскурсия 2: фото-->
-                <img
-                  class="section-excursion__item foto"
-                  src="images/moroz.png"
-                  alt="">
+                <img class="section-excursion__item foto foto--position" src="images/moroz.png" alt="" />
               </div>
-              <!--Экскурсия 3-->
-              <div class="section-excursion__item">
+
+		<!--Экскурсия 3-->
+              <div
+                class="section-excursion__item section-excursion__item--third">
                 <!--Экскурсия 3: дата время возраст-->
-                <div class="section__datetimeage">
-                  БЛИЖАЙШАЯ ДАТА<br />02.12.2021 10:30
+                <div class="section__datetimeage">БЛИЖАЙШАЯ ДАТА<br />02.12.2021<span class="section__time">10:30</span>
                 </div>
                 <!--Экскурсия 3: заголовок экскурсии 3-->
-                <h3 class="section-excursion__item title">
-                  ТРАДИЦИОННАЯ<br />НИЖЕГОРОДСКАЯ<br />КУХНЯ
-                </h3>
+                <h3 class="section-excursion__item title">ТРАДИЦИОННАЯ<br />НИЖЕГОРОДСКАЯ<br />КУХНЯ</h3>
                 <!--Экскурсия 3: фото-->
-                <img
-                  class="section-excursion__item foto"
-                  src="images/kuhny.png"
-                  alt="">
+                <img class="section-excursion__item foto" src="images/kuhny.png" alt="" />
               </div>
             </div>
-            <!--Ссылка страницы Смотреть все-->
-            <div class="page-section__linkpage">
-              <a class="page-section__linktext" href="">Смотреть все экскурсии</a>
+
+		<!--кнопка страницы Смотреть все-->
+            <div class="section-excursion_button section-excursion__toggle section-excursion_button--mobile" role="button" tabindex="0" onclick="this.parentElement.classList.toggle('is-open')">
+              <a href="#!" class="section-excursion_btn section-excursion_button--secondary button button--secondary">Смотреть все экскурсии</a>
             </div>
-          </div>                 
+            
+		<!--Ссылка страницы Смотреть все-->
+            <div class="page-section__linkpage"><a class="page-section__linktext" href="">Смотреть все экскурсии</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -292,38 +286,66 @@
 
     
     <!-- Проекты -->
-      <section class="page-section section-projects">
-          <div class="container-top">
-            <div class="page-section-right">
-              <!--Заголовок раздела Проекты-->
-              <h2 class="page-section__title">ПРОЕКТЫ</h2>
-              <!--Проект 1-->
-              <div class="section-projects__list">
-                <!--Проект 1: фото-->
-                  <img class="section-projects__foto" src="images/lekarstvo.png" alt="">
-                  <!--Проект 1: текст-->
-                  <div class="section-projects__bloktext">
-                    <!--Проект 1: заголовок проекта-->
-                      <h4 class="section-projects_title">"ЛЕКАРСТВО ОТ ЗАДУМЧИВОСТИ"</h4>
-                      <!--Проект 1: описание проекта-->
-                      <p class="section-projects__text text">Дорогие друзья!<br/>Так назывался один из первых сборников<br/>сказок, изданных в России в восемнадцатом<br/>веке. Мы хотим напомнить детям и взрослым<br/>о чудесном, фантастическом мире русских<br/>сказок.
-                      </p>
-                      <!--Проект 1: Кнопка перейти-->
-                      <a href="#!" class="section-projects-btn button button--secondary">Перейти на страницу проекта</a>
-                  </div>
-                <!--Проект 1: кнопка перехода на следующий проект (слайдер)--> <!--======================================================================-->
-                <button class="section-projects__arrow--right" href="">
-                  <svg width="33" height="30" viewBox="0 0 20 18" fill=#6B6B6B xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 9.00004C0.5 8.68509 0.625111 8.38305 0.847811 8.16035C1.07051 7.93765 1.37256 7.81253 1.6875 7.81253H15.4459L10.3468 2.71579C10.1238 2.49281 9.9985 2.19038 9.9985 1.87504C9.9985 1.55969 10.1238 1.25727 10.3468 1.03429C10.5697 0.811305 10.8722 0.686035 11.1875 0.686035C11.5028 0.686035 11.8053 0.811305 12.0282 1.03429L19.1532 8.15928C19.2638 8.26959 19.3516 8.40064 19.4114 8.5449C19.4713 8.68917 19.5021 8.84384 19.5021 9.00004C19.5021 9.15623 19.4713 9.31089 19.4114 9.45516C19.3516 9.59943 19.2638 9.73048 19.1532 9.84079L12.0282 16.9658C11.8053 17.1888 11.5028 17.314 11.1875 17.314C10.8722 17.314 10.5697 17.1888 10.3468 16.9658C10.1238 16.7428 9.9985 16.4404 9.9985 16.125C9.9985 15.8097 10.1238 15.5073 10.3468 15.2843L15.4459 10.1875H1.6875C1.37256 10.1875 1.07051 10.0624 0.847811 9.83972C0.625111 9.61703 0.5 9.31498 0.5 9.00004Z" fill=#6B6B6B/>
-                    </svg>
-                </button>   
+    <section class="page-section section-projects">
+      <div class="container-top">
+        <div class="page-section-right">
+          <!--Заголовок раздела Проекты-->
+          <h2 class="page-section__title">ПРОЕКТЫ</h2>
+          <div class="section-projects__list">
+            <!--Проект 1-->
+            <div class="section-projects__item section-projects__item--ferst">
+              <!--Проект 1: фото-->
+              <img class="section-projects__foto" src="images/lekarstvo.png" alt=""/>
+              <!--Проект 1: текст-->
+              <div class="section-projects__bloktext">
+                <!--Проект 1: заголовок проекта-->
+                <h4 class="section-projects_title">"ЛЕКАРСТВО ОТ ЗАДУМЧИВОСТИ"</h4>
+                <!--Проект 1: описание проекта-->
+                <p class="section-projects__text text"><span class="section__invisible">Дорогие друзья!<br /></span>Так назывался один из первых сборников сказок, изданных в России в восемнадцатом веке.<span class="section__invisible">Мы хотим напомнить детям и взрослым о чудесном, фантастическом мире русских сказок.</span></p>
+                <!--Проект 1: Кнопка перейти-->
+                <a href="#!" class="section-projects-button section-projects-btn button button--secondary">Перейти на страницу проекта</a>
               </div>
-              <div class="page-section__linkpage">
-                  <a class="page-section__linktext" href="">Смотреть все проекты</a>
+              <!--Проект 1: кнопка перехода на следующий проект (слайдер)-->
+              <!--======================================================================-->
+              <button class="section-projects__arrow--right" href="">
+                <svg width="33" height="30" viewBox="0 0 20 18" fill="#6B6B6B" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 9.00004C0.5 8.68509 0.625111 8.38305 0.847811 8.16035C1.07051 7.93765 1.37256 7.81253 1.6875 7.81253H15.4459L10.3468 2.71579C10.1238 2.49281 9.9985 2.19038 9.9985 1.87504C9.9985 1.55969 10.1238 1.25727 10.3468 1.03429C10.5697 0.811305 10.8722 0.686035 11.1875 0.686035C11.5028 0.686035 11.8053 0.811305 12.0282 1.03429L19.1532 8.15928C19.2638 8.26959 19.3516 8.40064 19.4114 8.5449C19.4713 8.68917 19.5021 8.84384 19.5021 9.00004C19.5021 9.15623 19.4713 9.31089 19.4114 9.45516C19.3516 9.59943 19.2638 9.73048 19.1532 9.84079L12.0282 16.9658C11.8053 17.1888 11.5028 17.314 11.1875 17.314C10.8722 17.314 10.5697 17.1888 10.3468 16.9658C10.1238 16.7428 9.9985 16.4404 9.9985 16.125C9.9985 15.8097 10.1238 15.5073 10.3468 15.2843L15.4459 10.1875H1.6875C1.37256 10.1875 1.07051 10.0624 0.847811 9.83972C0.625111 9.61703 0.5 9.31498 0.5 9.00004Z" fill="var"(--links_hover)/>
+                </svg>
+              </button>
+            </div>
+            <!--Проект 2-->
+            <div class="section-projects__item section-projects__item--second">
+              <!--Проект 2: фото-->
+              <img class="section-projects__foto" src="images/berds.png" alt=""/>
+              <!--Проект 2: текст-->
+              <div class="section-projects__bloktext">
+                <!--Проект 2: заголовок проекта-->
+                <h4 class="section-projects_title">ПТИЦЫ ЩЕЛОКОВСКОГО ХУТОРА</h4>
+                <!--Проект 2: описание проекта-->
+                <p class="section-projects__text text">На Щелоковском хуторе обитает около 100 видов птиц.</p>
+                <!--Проект 2: Кнопка перейти-->
+                <a href="#!" class=" section-projects-button section-projects-btn button button--secondary" >Перейти на страницу проекта</a>
               </div>
-            </div>            
+              <!--Проект 2: кнопка перехода на следующий проект (слайдер)-->
+              <!--======================================================================-->
+              <button class="section-projects__arrow--right" href="">
+                <svg width="33" height="30" viewBox="0 0 20 18" fill="#6B6B6B" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 9.00004C0.5 8.68509 0.625111 8.38305 0.847811 8.16035C1.07051 7.93765 1.37256 7.81253 1.6875 7.81253H15.4459L10.3468 2.71579C10.1238 2.49281 9.9985 2.19038 9.9985 1.87504C9.9985 1.55969 10.1238 1.25727 10.3468 1.03429C10.5697 0.811305 10.8722 0.686035 11.1875 0.686035C11.5028 0.686035 11.8053 0.811305 12.0282 1.03429L19.1532 8.15928C19.2638 8.26959 19.3516 8.40064 19.4114 8.5449C19.4713 8.68917 19.5021 8.84384 19.5021 9.00004C19.5021 9.15623 19.4713 9.31089 19.4114 9.45516C19.3516 9.59943 19.2638 9.73048 19.1532 9.84079L12.0282 16.9658C11.8053 17.1888 11.5028 17.314 11.1875 17.314C10.8722 17.314 10.5697 17.1888 10.3468 16.9658C10.1238 16.7428 9.9985 16.4404 9.9985 16.125C9.9985 15.8097 10.1238 15.5073 10.3468 15.2843L15.4459 10.1875H1.6875C1.37256 10.1875 1.07051 10.0624 0.847811 9.83972C0.625111 9.61703 0.5 9.31498 0.5 9.00004Z" fill="var" (--links_hover)/>
+                </svg>
+              </button>
+            </div>
           </div>
-      </section>
+          <div class=" section-excursion_button section-excursion__toggle section-excursion_button--mobile" role="button"
+            tabindex="0" onclick="this.parentElement.classList.toggle('is-open')">
+            <a href="#!" class=" section-excursion_btn section-excursion_button--secondary button button--secondary">Смотреть все проекты</a>
+          </div>
+
+          <div class="page-section__linkpage">
+            <a class="page-section__linktext" href="">Смотреть все проекты</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
       <!-- Новости -->
       <section class="section-news">
@@ -564,6 +586,6 @@
               </div>
           </div>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
