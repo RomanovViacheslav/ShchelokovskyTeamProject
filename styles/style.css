@@ -444,64 +444,108 @@ a {
 /*---------------------------------------------------------------------*/
 /* Эко-тропа */
 
-.section-tour {
-  display: flex;
+.section-tour__wrap {
+  padding-left: 0;
+  padding-right: 0;
   background: var(--color-block);
-  margin-top: 92px;
-  padding: 0;
 }
+
+.section-tour {
+  margin-top: 92px;
+}
+
+.section-tour__flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
+  /* justify-items: center;
+  align-items: center; */
+}
+
+.section-tour_vk__adapt {
+  display: none;
+}
+
 /* картинка в блоке Эко-тропа */
 
 .section-tour_image {
-  max-width: 441px;
+  max-width: 40%;
   height: 515px;
 }
 
-.section-tour_content-right {
-  margin: 0 auto;
-  padding-top: 57px;
-  padding-left: 5px;
+.section-tour_content-left {
+  grid-column: 1 span;
 }
+
+.section-tour_content-right {
+  grid-column: 1 span;
+  padding-top: 57px;
+
+  /* padding-left: 177px; */
+  /* width: 60%; */
+}
+
 /* заголовок в блоке Эко-тропа */
 
 .section-tour_title {
-  max-width: 412px;
-  height: 87px;
+  width: 412px;
+  /* height: 87px; */
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--txt-main);
+  margin-bottom: 40px;
 }
+
 /* текст в блоке Эко-тропа */
 
 .section-tour_text {
-  max-width: 412px;
+  width: 412px;
   font-size: 14px;
   line-height: 130%;
   letter-spacing: 0.03em;
   color: var(--txt-main);
 }
+
 /* блок для кнопок в блоке Эко-тропа */
 
 .section-tour_button {
-  margin-top: 34px;
-  display: flex;
-  max-width: 352px;
-  justify-content: space-between;
+  margin-bottom: 45px;
+  margin-top: 35px;
+  /* display: flex; */
+  /* max-width: 352px; */
+  /* justify-content: space-between; */
 }
-.section-tour_button--secondary {
-  min-width: 150px;
-  margin-top: 0px;
+
+.section-tour_button_left {
+  margin-right: 57px;
+  width: 150px;
+}
+
+.section-tour_button_right {
+  width: 145px;
+  background-color: var(--color-main);
 }
 
 /* изменяю размеры по фигме в блоке Эко-тропа */
 
 .section-tour_btn {
-  max-width: 150px;
+  /* max-width: 150px; */
   height: 40px;
 }
+
+.section-tour_title__adapt {
+  display: none;
+  width: 150px;
+}
+
+.section-tour__image-mobile {
+  display: none;
+}
+
 /*---------------------------------------------------------------------*/
 /*==================================================================================================-*/
 /* ПРОЕКТЫ*/
@@ -1084,6 +1128,89 @@ a {
     padding-bottom: 24px;
   }
 
+  /* эко-тропа */
+  /* .section-tour {
+    margin-top: 0;
+  } */
+
+  .section-tour__flex {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .section-tour__image {
+    width: 80%;
+  }
+
+  .section-tour_content-right {
+    padding-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* text-align: center; */
+  }
+
+  .section-tour_title {
+    width: 100%;
+  }
+
+  .section-tour_text {
+    width: 100%;
+  }
+
+  .section-tour_button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-section__linkpage {
+    margin-bottom: 20px;
+  }
+  /* .section-tour__flex {
+    /* display: block; */
+  /* flex-wrap: wrap;
+    flex-direction: column; */
+  /* }
+.section-tour_title {
+    display: none;
+  }
+  /* .section-tour_title__adapt {
+    display: block;
+    margin: 10px auto;
+    max-width: 280px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--txt-main);
+  } */
+  /* .section-tour_content-right {
+    padding-top: 10px;
+  }
+  .section-tour_text {
+    margin: 0;
+  }
+  .section-tour_button {
+    display: flex;
+    justify-content: space-around;
+  }
+  .button--primary {
+    padding: 6px 26px;
+  }
+  .button--secondary {
+    padding: 6px 26px;
+  }
+  .page-section__linktext {
+    visibility: hidden;
+  }
+  .section-tour_text__adapt {
+    visibility: hidden;
+  } */
+
   /* контакты и новость */
 
   .breadcrumbs {
@@ -1350,6 +1477,84 @@ a {
     width: 168px;
   }
 
+  /* эко-тропа */
+  .section-tour {
+    margin: 0;
+  }
+
+  .section-tour__flex {
+    gap: 0;
+  }
+
+  .section-tour__image {
+    display: none;
+  }
+
+  .section-tour__image-mobile {
+    display: block;
+    /* height: 90%; */
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  /* .section-tour_vk__adapt {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--color-main);
+    fill: var(--color-main);
+  } */
+  .section-tour_title {
+    display: none;
+  }
+  .section-tour_button {
+    margin-top: 18px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: space-between;
+  }
+  .section-tour_title__adapt {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    /* max-width: 280px; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--txt-main);
+  }
+
+  .section-tour_text {
+    margin: 0;
+    font-size: 11px;
+  }
+
+  .section-tour_button_left {
+    width: 106px;
+    font-size: 10px;
+    height: 27px;
+    margin-right: 0;
+  }
+
+  .section-tour_button_right {
+    width: 103px;
+    font-size: 10px;
+    height: 27px;
+  }
+
+  .page-section__linktext {
+    display: none;
+  }
+  .section-tour_text__adapt {
+    display: none;
+  }
+
   /* главная страница ПРОЕКТЫ*/
   .section-projects__list {
     display: flex;
@@ -1359,7 +1564,7 @@ a {
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
     min-width: 71%;
-    margin-right: 14px
+    margin-right: 14px;
     margin-top: 17px;
     border: 1px solid #f0eeee;
     box-sizing: border-box;
